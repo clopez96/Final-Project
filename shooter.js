@@ -1,3 +1,5 @@
+alert("Press OK to start!");
+
 
 
 	// loads images as spacerock and plane
@@ -16,7 +18,7 @@ function loadImages(){
 
 
 function init(){
-// document.getElementById('mycanvas') gets the canvas element defined in the html file by using its id.
+// document.getElementById('mycanvas') retrieves the canvas element defined in the html file by using its id.
 canvas = document.getElementById('mycanvas');
 
 console.log(canvas);
@@ -311,7 +313,5 @@ startGame();
 var sound = new Howl({
   src: ['audio/ArcadeFunk.mp3']
 }).play();
-
-
 
 
