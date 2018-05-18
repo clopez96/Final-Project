@@ -1,4 +1,5 @@
 
+
 	// loads images as spacerock and plane
 function loadImages(){
 
@@ -15,7 +16,7 @@ function loadImages(){
 
 
 function init(){
-// document.getElementById('mycanvas') retrieves the canvas element defined in the html file by using its id.
+// document.getElementById('mycanvas') gets the canvas element defined in the html file by using its id.
 canvas = document.getElementById('mycanvas');
 
 console.log(canvas);
@@ -41,12 +42,7 @@ plane = {
 	rockets : [],
 
 	update : function(){
-		//this.x = this.x + this.speed;
-
-		// To test the boundary conditions
-		//if(this.x >= W-this.w || this.x<=0){
-		//	this.speed *= -1;
-		//}
+	
 	},
 
 	draw : function(){
@@ -88,7 +84,7 @@ plane = {
 
 };
 
-// Listener for events
+
 
 //spacebar (shooter)
 function buttonGotPressed(e){
@@ -166,7 +162,7 @@ function rocket(x,y,speed){
 
 }
 
-// Class defined for an spacerock
+// Class defined for a spacerock
 function spacerock(x,y,speed){
 	this.x = x;
 	this.y = y;
@@ -310,8 +306,12 @@ function startGame(){
 
 startGame();
 
+
+//sound (could not figure out how to make it work)
 var sound = new Howl({
   src: ['audio/ArcadeFunk.mp3']
 }).play();
+
+
 
 
