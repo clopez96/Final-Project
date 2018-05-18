@@ -25,7 +25,7 @@ console.log(canvas);
 gameover = false;
 
 // pen is an object created using the getContext() function.
-pen = canvas.getContext('2d'); // 2d is passed to make 2d games in html
+pen = canvas.getContext('2d'); 
 
 W = canvas.width;
 H = canvas.height;
