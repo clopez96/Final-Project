@@ -1,0 +1,21 @@
+#mycanvas{
+			
+			background : url("Images/space.jpg");
+			-webkit-animation: animatedBackground 23s linear infinite;
+			background-repeat: repeat-y;
+		}
+
+		@-webkit-keyframes animatedBackground {
+			from { background-position: 0 0; }
+			to { background-position: 0 1000px; }
+		}
+
+	.score {
+				position: absolute;
+				margin-top: 50px;
+				margin-left: 50px;
+				float: right;
+				color: #ffffff;
+				font-family: Helvetica, sans-serif;
+				
+			}
